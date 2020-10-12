@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Gotham Bold';
+    src: local(※), url("../font/Gotham/Gotham-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: local(※), url("../font/Gotham/Gotham-Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: local(※), url("../font/Gotham/Gotham-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: local(※), url("../font/Gotham/Gotham-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 710';
+    src: local(※), url("../font/YoonGothic700/YoonGothic710.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 720';
+    src: local(※), url("../font/YoonGothic700/YoonGothic720.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 730';
+    src: local(※), url("../font/YoonGothic700/YoonGothic730.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 740';
+    src: local(※), url("../font/YoonGothic700/YoonGothic740.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 750';
+    src: local(※), url("../font/YoonGothic700/YoonGothic750.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 760';
+    src: local(※), url("../font/YoonGothic700/YoonGothic760.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 770';
+    src: local(※), url("../font/YoonGothic700/YoonGothic770.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 780';
+    src: local(※), url("../font/YoonGothic700/YoonGothic780.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Yoon윤고딕 790';
+    src: local(※), url("../font/YoonGothic700/YoonGothic790.otf") format("opentype");
+}

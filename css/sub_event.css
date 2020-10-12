@@ -1,0 +1,684 @@
+@charset "utf-8";
+html, body {
+    height: 100%;
+    overflow-y: hidden
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+    font-family: "Dotum", "Arial", sans-serif;
+    font-size: 12px;
+    color: #333;
+    background: white
+}
+
+.posNum {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 50px;
+    margin: -25px 0 0 -150px;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+    display: none;
+}
+
+#header {}
+
+#menu01{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#menu01 > h1{
+    position: absolute;
+    left: 44px;
+    top: 44px;
+}
+
+#menu01 .menu_list{
+    width: 800px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+#menu01 .menu_list > li > a{
+    font-family: 'Gotham Medium';
+    font-size: 20px;
+    float: left;
+    margin-right: 95px;
+    color: #fff;
+}
+
+#menu01 .menu_list > li:last-child > a{
+    margin: 0;
+}
+
+#menu01 .login{
+    font-family: 'Gotham Light';
+    font-size: 16px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu02{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#menu02 > h1{
+    position: absolute;
+    left: 44px;
+    top: 28px;
+}
+
+#menu02 .menu_list{
+    width: 800px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 34px;
+    transform: translateX(-50%);
+}
+
+#menu02 .menu_list > li > a{
+    font-family: 'Gotham Medium';
+    font-size: 20px;
+    float: left;
+    margin-right: 95px;
+    color: #fff;
+}
+
+#menu02 .menu_list > li:last-child > a{
+    margin: 0;
+}
+
+#menu02 .login{
+    font-family: 'Gotham Light';
+    font-size: 16px;
+    position: fixed;
+    right: 50px;
+    top: 34px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu02 .menu_bg{
+    width: 1920px;
+    height: 80px;
+    background: #001833;
+}
+
+/*--------------------------------------------------------------
+    #header end
+--------------------------------------------------------------*/
+
+
+.scrollBox {
+    min-width: 1200px;
+    height: 100%;
+    position: relative
+}
+
+.scrollBox .wrap {
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden
+}
+
+.scrollBox .wrap > div {
+    position: relative
+}
+
+.scrollBox .wrap .objs > li {
+    position: absolute;
+    left: 50%
+}
+/*--------------------------------------------------------------
+    .scrollBox end
+--------------------------------------------------------------*/
+
+
+#scene01 {
+    height: 920px;
+    background: url("../image/event/event-header.jpg");
+}
+
+#scene01 .header_typo{
+    position: absolute;
+    left: 50%;
+    top: 419px;
+    transform: translateX(-50%);
+}
+
+#scene01 .tit{
+    font-family: "Gotham Bold";
+    font-size: 90px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#scene01 .text{
+    font-family: "Yoon윤고딕 730";
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+#scene01 .category_box{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #d2d2d2;
+    position: absolute;
+    left: 50%;
+    top: 820px;
+    transform: translateX(-50%);
+}
+
+#scene01 .category{
+    width: 520px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#scene01 .category > li{
+    width: 260px;
+    height: 100px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#scene01 .category > li > div{
+    font-family: "Yoon윤고딕 730";
+    font-size: 20px;
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 100px;
+}
+
+#scene01 .category .ca01.on > div{
+    font-family: "Yoon윤고딕 750";
+    color: #222;
+    transition: all .5s;
+}
+
+#scene01 .category .ca02.on > div{
+    font-family: "Yoon윤고딕 750";
+    color: #222;
+    transition: all .5s;
+}
+
+#scene01 .category > li.on .line{
+    width: 260px;
+    height: 8px;
+    background: #004da3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*--------------------------------------------------------------
+    #scene01 end
+--------------------------------------------------------------*/
+
+
+#scene02 {
+    height: 610px;
+}
+
+#scene02 .event_box{
+    width: 100%;
+    height: 510px;
+    background: url("../image/event/slider01.jpg");
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+#scene02 .event_box .prev{
+    width: 64px;
+    height: 64px;
+    background: url("../image/main/model-prev-ui.png");
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#scene02 .event_box .next{
+    width: 64px;
+    height: 64px;
+    background: url("../image/main/model-next-ui.png");
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#scene02 .event_box .typo{
+    position: absolute;
+    left: 372px;
+    top: 166px;
+}
+
+#scene02 .event_box .typo .tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 45px;
+    color: #fff;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+}
+
+#scene02 .event_box .typo .text{
+    font-family: "Yoon윤고딕 740";
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: -0.5px;
+    line-height: 32px;
+    margin-bottom: 55px;
+}
+
+#scene02 .event_box .typo .text .bold{
+    font-family: "Yoon윤고딕 770";
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+#scene02 .event_box .typo .viewmore_btn{
+    position: absolute;
+    cursor: pointer;
+}
+
+#scene02 .event_box .typo .viewmore_btn > div:nth-child(1){
+    font-family: "Yoon윤고딕 770";
+    font-size: 18px;
+    letter-spacing: -1.5px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#scene02 .event_box .typo .viewmore_btn .line{
+    width: 105px;
+    height: 7px;
+    background: #80afe5;
+}
+
+/*--------------------------------------------------------------
+    #scene02 end
+--------------------------------------------------------------*/
+
+
+#scene03 {
+    height: 1106px;
+}
+
+#scene03 .event01, #scene03 .event02{
+    width: 1300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#scene03 .event01{
+    top: 100px;
+}
+
+#scene03 .event02{
+    top: 553px;
+}
+
+#scene03 .event01 > div,
+#scene03 .event02 > div{
+    width: 408px;
+    height: 316px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#scene03 .event01 .e2,
+#scene03 .event02 .e5{
+    margin: 0 36px;
+}
+
+#scene03 > div > div .imgbox{
+    width: 408px;
+    height: 205px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scene03 > div > div .imgbox > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    transition: all 1s;
+}
+
+#scene03 > div > div .imgbox > img.on{
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+#scene03 > div > div .event_typo{
+    position: absolute;
+    left: 10px;
+    top: 236px;
+}
+
+#scene03 > div > div .event_typo .subtit{
+    font-family: "Yoon윤고딕 760";
+    font-size: 14px;
+    color: #0058bb;
+    margin-bottom: 15px;
+}
+
+#scene03 > div > div .event_typo .tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 18px;
+    color: #313131;
+    margin-bottom: 23px;
+}
+
+#scene03 > div > div .event_typo .date{
+    font-family: "Gotham Book";
+    font-size: 14px;
+    color: #898989;
+}
+
+#scene03 .pagination{
+    width: 530px;
+    height: 33px;
+    position: absolute;
+    left: 50%;
+    bottom: 102px;
+    transform: translateX(-50%);
+}
+
+#scene03 .pagination .prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Gotham Book";
+    font-size: 14px;
+    color: #434343;
+    cursor: pointer;
+}
+
+#scene03 .pagination > div .text{
+    margin: 0 5px;
+}
+
+#scene03 .pagination .number{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#scene03 .pagination .number > div{
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin: 0 10px;
+    font-family: "Gotham Medium";
+    font-size: 12px;
+    color: #313131;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+#scene03 .pagination .number .p3{
+    border-radius: 33px;
+    background: #0058bb;
+    color: #fff;
+}
+
+#scene03 .pagination .next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Gotham Book";
+    font-size: 14px;
+    color: #434343;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+    #scene03 end
+--------------------------------------------------------------*/
+
+
+#scene04 {
+    height: 2753px;
+    background: #fff;
+}
+
+/*--------------------------------------------------------------
+    #scene04 end
+--------------------------------------------------------------*/
+
+
+#scene05 {
+    height: 2753px;
+    background: #fff;
+}
+
+/*--------------------------------------------------------------
+    #scene05 end
+--------------------------------------------------------------*/
+
+
+#scene06 {
+    height: 2753px;
+    background: #fff;
+}
+
+/*--------------------------------------------------------------
+    #scene06 end
+--------------------------------------------------------------*/
+
+#footer {
+    height: 426px;
+    background: #03101e;
+    position: relative;
+}
+
+#footer .footer_inner{
+    width: 1126px;
+    height: 285px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#footer .footer_inner .top{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#footer .footer_inner .top > div{
+    width: 250px;
+    height: 164px;
+    float: left;
+    margin-right: 217px;
+    position: relative;
+}
+
+#footer .footer_inner .top > div:nth-child(3){
+    margin-right: 0;
+}
+
+#footer .footer_inner .top .left > ul > li{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #859db7;
+    margin-bottom: 16px;
+}
+
+#footer .footer_inner .top .left .left01{
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+#footer .footer_inner .top .left .left01 .bold{
+    font-family: 'Yoon윤고딕 770';
+}
+
+#footer .footer_inner .top .left .left02{
+    position: absolute;
+    left: 185px;
+    top: 60px;
+}
+
+#footer .footer_inner .top > div .tit{
+    font-family: 'Gotham Bold';
+    font-size: 16px;
+    color: #fff;
+}
+
+#footer .footer_inner .top .center .family_box{
+    width: 245px;
+    height: 38px;
+    border: 1px solid #3d5065;
+    padding: 0 15px 0;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    cursor: pointer;
+}
+
+#footer .footer_inner .top .center .family_box > span{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #859db7;
+    line-height: 38px;
+}
+
+#footer .footer_inner .top .center .family_box > span:nth-child(2) {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+
+#footer .footer_inner .top .right{
+    width: 163px;
+    height: 164px;
+}
+
+#footer .footer_inner .top .right .sns{
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+#footer .footer_inner .top .right > ul > li{
+    font-family: 'Gotham Book';
+    font-size: 14px;
+    color: #859db7;
+    margin-bottom: 16px;
+}
+
+
+
+#footer .footer_inner .line{
+    width: 1126px;
+    height: 1px;
+    background: #002c5e;
+    position: absolute;
+    bottom: 75px;
+}
+
+#footer .footer_inner .bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#footer .footer_inner .bottom > div{
+    float: left;
+}
+
+#footer .footer_inner .bottom .left{
+    width: 465px;
+    height: 40px;
+}
+
+#footer .footer_inner .bottom .call{margin-bottom: 16px;}
+
+#footer .footer_inner .bottom .call > span{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 14px;
+    color: #859db7;
+}
+#footer .footer_inner .bottom .call > span:nth-child(1){
+    font-family: 'Yoon윤고딕 770';
+    margin-right: 5px;
+}
+
+#footer .footer_inner .bottom .copyright{
+    font-family: 'Gotham Book';
+    font-size: 12px;
+    color: #859db7;
+}
+
+#footer .footer_inner .bottom .copyright > img{margin: 0 3px 0;}
+
+#footer .footer_inner .bottom .right{
+    width: 584px;
+    height: 40px;
+}
+
+#footer .footer_inner .bottom .right .right01{margin-bottom: 14px;}
+
+#footer .footer_inner .bottom .right > div > span{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 12px;
+    letter-spacing: -1px;
+    color: #859db7;
+    margin-right: 20px;
+}
+
+
+/*--------------------------------------------------------------
+    #footer end
+--------------------------------------------------------------*/

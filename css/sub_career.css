@@ -1,0 +1,1154 @@
+@charset "utf-8";
+html, body {
+    height: 100%;
+    overflow-y: hidden
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+    font-family: "Dotum", "Arial", sans-serif;
+    font-size: 12px;
+    color: #333;
+    background: white
+}
+
+.posNum {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 50px;
+    margin: -25px 0 0 -150px;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+    display: none;
+}
+
+#header {}
+
+#menu01{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#menu01 > h1{
+    position: absolute;
+    left: 44px;
+    top: 44px;
+}
+
+#menu01 .menu_list{
+    width: 800px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+#menu01 .menu_list > li > a{
+    font-family: 'Gotham Medium';
+    font-size: 20px;
+    float: left;
+    margin-right: 95px;
+    color: #fff;
+}
+
+#menu01 .menu_list > li:last-child > a{
+    margin: 0;
+}
+
+#menu01 .login{
+    font-family: 'Gotham Light';
+    font-size: 16px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu02{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#menu02 > h1{
+    position: absolute;
+    left: 44px;
+    top: 28px;
+}
+
+#menu02 .menu_list{
+    width: 800px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 34px;
+    transform: translateX(-50%);
+}
+
+#menu02 .menu_list > li > a{
+    font-family: 'Gotham Medium';
+    font-size: 20px;
+    float: left;
+    margin-right: 95px;
+    color: #fff;
+}
+
+#menu02 .menu_list > li:last-child > a{
+    margin: 0;
+}
+
+#menu02 .login{
+    font-family: 'Gotham Light';
+    font-size: 16px;
+    position: fixed;
+    right: 50px;
+    top: 34px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu02 .menu_bg{
+    width: 1920px;
+    height: 80px;
+    background: #001833;
+}
+
+/*--------------------------------------------------------------
+    #header end
+--------------------------------------------------------------*/
+
+
+.scrollBox {
+    min-width: 1200px;
+    height: 100%;
+    position: relative
+}
+
+.scrollBox .wrap {
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden
+}
+
+.scrollBox .wrap > div {
+    position: relative
+}
+
+.scrollBox .wrap .objs > li {
+    position: absolute;
+    left: 50%
+}
+/*--------------------------------------------------------------
+    .scrollBox end
+--------------------------------------------------------------*/
+
+
+#scene01 {
+    height: 920px;
+    background: url("../image/careers/carrer-header.jpg");
+}
+
+#scene01 .header_typo{
+    position: absolute;
+    left: 50%;
+    top: 419px;
+    transform: translateX(-50%);
+}
+
+#scene01 .tit{
+    font-family: "Gotham Bold";
+    font-size: 90px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#scene01 .text{
+    font-family: "Yoon윤고딕 730";
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+#scene01 .category_box{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #d2d2d2;
+    position: absolute;
+    left: 50%;
+    top: 820px;
+    transform: translateX(-50%);
+}
+
+#scene01 .category{
+    width: 1040px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#scene01 .category > li{
+    width: 260px;
+    height: 100px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#scene01 .category > li > div{
+    font-family: "Yoon윤고딕 730";
+    font-size: 20px;
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 100px;
+}
+
+#scene01 .category .ca01.on > div,
+#scene01 .category .ca02.on > div,
+#scene01 .category .ca03.on > div,
+#scene01 .category .ca04.on > div,
+#scene01 .category .ca05.on > div{
+    font-family: "Yoon윤고딕 750";
+    color: #222;
+    transition: all .5s;
+}
+
+#scene01 .category > li.on .line{
+    width: 260px;
+    height: 8px;
+    background: #004da3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+    #scene01 end
+--------------------------------------------------------------*/
+
+
+#scene02 {
+    height: 944px;
+}
+
+#job{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 163px;
+    transform: translateX(-50%);
+}
+
+#job .slick-slide{
+    width: 1205px;
+    height: 618px;
+    margin-right: 98px !important;/*slide간의 여백 설정 */
+    opacity: .5;
+    transition:all 0.5s;
+    position: relative;
+    outline: none;
+}
+
+#job .slick-current{
+    opacity: 1;
+}
+
+#job > div .blueline{
+    width: 220px;
+    height: 8px;
+    background: #004da3;
+    position: absolute;
+    left: 635px;
+    top: 267px;
+}
+
+#job > div .job_typo{
+    position: absolute;
+    left: 793px;
+    top: 60px;
+}
+
+#job > div .job_typo .tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 36px;
+    color: #001833;
+    margin-bottom: 45px;
+}
+
+#job > div .job_typo .sub{
+    font-family: "Yoon윤고딕 740";
+    font-size: 20px;
+    color: #313131;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 90px;
+}
+
+#job > div .job_typo .text{
+    font-family: "Yoon윤고딕 740";
+    font-size: 16px;
+    color: #626262;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: -1px;
+}
+
+#job > div .slick-prev{
+    width: 40px;
+    height: 39px;
+    background: url("../image/careers/job-prevarrow.png");
+    position: absolute;
+    left: 793px;
+    bottom: 60px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#job > div .slick-next{
+    width: 40px;
+    height: 39px;
+    background: url("../image/careers/job-nextarrow.png");
+    position: absolute;
+    left: 841px;
+    bottom: 60px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#job > div .page{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+#job > div .page .present{
+    font-family: "Gotham Bold";
+    font-size: 20px;
+    color: #001833;
+}
+
+#job > div .page .all{
+    font-family: "Gotham Book";
+    font-size: 16px;
+    color: #b5b5b5;
+}
+
+/*--------------------------------------------------------------
+    #scene02 end
+--------------------------------------------------------------*/
+
+
+#scene03 {
+    height: 240px;
+    background: url("../image/careers/mid-bg.jpg");
+}
+
+#scene03 .line{
+    width: 580px;
+    height: 95px;
+    position: absolute;
+    left: 678px;
+    top: 35%;
+}
+
+#scene03 .line > li{
+    width: 1px;
+    height: 95px;
+    background: #dcdcdc;
+    float: left;
+    margin-right: 282px;
+}
+
+#scene03 .line > li:nth-child(3){
+    margin: 0;
+}
+
+#scene03 .label{
+    font-family: "Yoon윤고딕 740";
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: -0.5px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+#scene03 .label > div{
+    width: 50px;
+    position: absolute;
+    top: 0;
+}
+
+#scene03 .label .l1{left: 519px;}
+#scene03 .label .l2{left: 802px;}
+#scene03 .label .l3{left: 1083px;}
+#scene03 .label .l4{left: 1363px;}
+
+#scene03 .countUp{
+    font-family: "Gotham Bold";
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: -0.5px;
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+#scene03 .countUp > div{
+    width: 90px;
+    position: absolute;
+    top: 0;
+}
+
+#scene03 .countUp .counter{
+    transition: all 2s ease;
+}
+
+#scene03 .countUp .c1{left: 500px;}
+#scene03 .countUp .c2{left: 778px;}
+#scene03 .countUp .c3{left: 1058px;}
+#scene03 .countUp .c4{left: 1340px;}
+
+/*--------------------------------------------------------------
+    #scene03 end
+--------------------------------------------------------------*/
+
+
+#scene04 {
+    height: 678px;
+    background: #eee;
+}
+
+#scene04 .content{
+    width: 1300px;
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+}
+
+#scene04 .content > div{
+    float: left;
+    margin-right: 20px;
+}
+
+#scene04 .content > div:nth-child(4){
+    margin: 0;
+}
+
+#scene04 .content .box{
+    width: 310px;
+    height: 388px;
+    background: #fff;
+    position: relative;
+}
+
+#scene04 .content .box .typo{
+    position: absolute;
+    left: 33px;
+    top: 68px;
+}
+
+#scene04 .content .typo .sub{
+    font-family: "Yoon윤고딕 740";
+    font-size: 14px;
+    color: #0058bb;
+    margin-bottom: 14px;
+}
+
+#scene04 .content .typo .blueline{
+    width: 29px;
+    height: 6px;
+    background: #0058bb;
+    margin-bottom: 17px;
+}
+
+#scene04 .content .typo .tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 18px;
+    color: #313131;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+#scene04 .content .typo .text{
+    font-family: "Yoon윤고딕 740";
+    font-size: 16px;
+    line-height: 24px;
+    color: #313131;
+}
+
+#scene04 .content .box .typo .period{
+    width: 280px;
+    position: absolute;
+    left: 0;
+    bottom: -44px;
+}
+
+#scene04 .content .box .typo .period > div{
+    float: left;
+}
+
+#scene04 .content .typo .period .date{
+    font-family: "Gotham Book";
+    font-size: 14px;
+    color: #898989;
+    line-height: 19px;
+    margin-right: 8px;
+}
+
+#scene04 .content .Dday{
+    width: 46px;
+    height: 19px;
+    border-radius: 9px;
+    background: #00a0dc;
+    font-family: "Yoon윤고딕 740";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 19px;
+}
+
+#scene04 .content .box .heart{
+    position: absolute;
+    left: 33px;
+    bottom: 33px;
+    cursor: pointer;
+}
+
+#scene04 .content .mini > div{
+    width: 310px;
+    height: 184px;
+    background: #fff;
+    position: relative;
+}
+
+#scene04 .content .mini > div .typo{
+    position: absolute;
+    left: 33px;
+    top: 29px;
+}
+
+#scene04 .content .mini > div .typo .sub{
+    margin-bottom: 9px;
+}
+
+#scene04 .content .mini > div .typo .blueline{
+    margin-bottom: 13px;
+}
+
+#scene04 .content .mini > div .typo .period{
+    width: 280px;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+}
+
+#scene04 .content .mini > div .typo .period > div{
+    float: left;
+}
+
+#scene04 .content .mini .m1{
+    margin-bottom: 20px;
+}
+
+#scene04 .content .last{
+    background: url("../image/careers/carrer-box.jpg");
+    cursor: pointer;
+}
+
+#scene04 .content .last .typo{
+    position: absolute;
+    top: 74px;
+}
+
+#scene04 .content .last .typo .tit{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+#scene04 .content .last .blue{
+    background: #0058bb;
+    position: absolute;
+    left: 33px;
+    bottom: 28px;
+}
+
+/* !!!여기부턴 뷰 모어 버튼 애니메이션!!!!!!!*/
+
+#scene04 .viewmore_btn{
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+#scene04 .viewmore_btn > div{
+    width: 127px;
+    height: 45px;
+    font-family: "Gotham Medium";
+    font-size: 15px;
+    letter-spacing: -1.5px;
+    line-height: 55px;
+    color: #626262;
+    text-align: center;
+    position: relative;
+    transition: all .2s;
+}
+
+#scene04 .viewmore_btn > div.on{
+    line-height: 45px;
+}
+
+#scene04 .viewmore_btn > div >span:nth-child(1){
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 4px;
+    background: #004da3;
+    transition: all .2s;
+    transition-delay: .4s;
+} /*top*/
+
+#scene04 .viewmore_btn > div.on >span:nth-child(1){
+    width: 100%;
+}
+
+#scene04 .viewmore_btn > div >span:nth-child(2){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 0;
+    background: #004da3;
+    transition: all .2s;
+    transition-delay: .2s;
+} /*right*/
+
+#scene04 .viewmore_btn > div.on >span:nth-child(2){
+    height: 100%;
+}
+
+#scene04 .viewmore_btn > div >span:nth-child(3){
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 89px;
+    height: 4px;
+    background: #004da3;
+    transform: translateX(-50%);
+    transition: all .2s;
+} /*bottom*/
+
+#scene04 .viewmore_btn > div.on >span:nth-child(3){
+    width: 100%;
+}
+
+#scene04 .viewmore_btn > div >span:nth-child(4){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 0;
+    background: #004da3;
+    transition: all .2s;
+    transition-delay: .6s;
+} /*left*/
+
+#scene04 .viewmore_btn > div.on >span:nth-child(4){
+    height: 100%;
+}
+
+
+/*--------------------------------------------------------------
+    #scene04 end
+--------------------------------------------------------------*/
+
+
+#scene05 {
+    height: 772px;
+}
+
+#scene05 .talk{
+    width: 400px;
+    height: 414px;
+    background: url("../image/careers/talk01.jpg");
+    position: absolute;
+    right: 1210px;
+    bottom: 163px;
+}
+
+#scene05 .talk .typo{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#scene05 .talk .typo .tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 23px;
+}
+
+#scene05 .talk .typo .text{
+    font-family: "Yoon윤고딕 740";
+    font-size: 16px;
+    color: #d8edf5;
+    line-height: 24px;
+}
+
+#scene05 .talk .talk_next{
+    width: 39px;
+    height: 39px;
+    background: url("../image/careers/next.png");
+    position: absolute;
+    left: 50%;
+    top: 174px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+#scene05 .story{
+    width: 1188px;
+    height: 414px;
+    background: #eee;
+    position: absolute;
+    right: 0;
+    bottom: 163px;
+}
+
+#scene05 .story .typo{
+    position: absolute;
+    left: 85px;
+    top: 127px;
+    color: #001833;
+}
+
+#scene05 .story .typo .tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 36px;
+    margin-bottom: 36px;
+    letter-spacing: -0.5px;
+}
+
+#scene05 .story .typo .name .sub{
+    font-family: "Yoon윤고딕 740";
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+#scene05 .story .typo .name .name_tit{
+    font-family: "Yoon윤고딕 770";
+    font-size: 20px;
+}
+
+#scene05 .viewmore_btn{
+    position: absolute;
+    left: 84px;
+    bottom: 107px;
+    cursor: pointer;
+}
+
+#scene05 .viewmore_btn > div{
+    font-family: "Gotham Medium";
+    font-size: 15px;
+    letter-spacing: -1.5px;
+    color: #626262;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#scene05 .viewmore_btn .line{
+    width: 89px;
+    height: 4px;
+    background: #004da3;
+}
+
+#scene05 .story .man{
+    position: absolute;
+    right: 457px;
+    bottom: 0;
+}
+
+#scene05 .story .right{
+    position: absolute;
+    right: 337px;
+    bottom: 66px;
+}
+
+#scene05 .story .right .arrow{
+    position: absolute;
+    right: 0;
+    bottom: 202px;
+}
+
+#scene05 .story .right .arrow > span{
+    cursor: pointer;
+}
+
+#scene05 .story .right .story_box{
+    width: 316px;
+    height: 187px;
+    background: #001833;
+    position: relative;
+}
+
+#scene05 .story .right .story_box .text{
+    font-family: "Yoon윤고딕 770";
+    font-size: 24px;
+    color: #fff;
+    text-align: right;
+    line-height: 36px;
+    position: absolute;
+    right: 37px;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: -1px;
+}
+
+#scene05 .story .right .story_box .Tmark{
+    width: 24px;
+    height: 20px;
+    background: url("../image/careers/story02.png");
+    position: absolute;
+    left: 30px;
+    top: 25px;
+}
+
+#scene05 .story .right .story_box .Bmark{
+    width: 24px;
+    height: 20px;
+    background: url("../image/careers/story03.png");
+    position: absolute;
+    right: 24px;
+    bottom: 25px;
+}
+
+
+/*--------------------------------------------------------------
+    #scene05 end
+--------------------------------------------------------------*/
+
+
+#scene06 {
+    height: 484px;
+    background: url("../image/careers/bottom-bg.jpg");
+}
+
+#scene06 .typo{
+    position: absolute;
+    left: 430px;
+    top: 137px;
+    color: #fff;
+}
+
+#scene06 .typo .sub{
+    font-family: "Yoon윤고딕 740";
+    font-size: 28px;
+    margin-bottom: 17px;
+}
+
+#scene06 .typo .tit{
+    font-family: "Yoon윤고딕 740";
+    font-size: 36px;
+    margin-bottom: 42px;
+}
+
+#scene06 .typo .tit .bold{
+    font-family: "Yoon윤고딕 770";
+}
+
+#scene06 .typo .text{
+    font-family: "Yoon윤고딕 740";
+    font-size: 16px;
+    color: #accaeb;
+    line-height: 26px;
+}
+
+#scene06 .icon{
+    width: 364px;
+    height: 334px;
+    position: absolute;
+    right: 480px;
+    bottom: 71px;
+}
+
+#scene06 .icon > li{
+    width: 140px;
+    height: 138px;
+}
+
+#scene06 .icon .i1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#scene06 .icon .i1 >img{
+    position: absolute;
+    left: 10px;
+    top: 17px;
+}
+
+#scene06 .icon .i2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#scene06 .icon .i2 >img{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+}
+
+#scene06 .icon .i3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#scene06 .icon .i3 >img{
+    position: absolute;
+    left: 12px;
+    top: 5px;
+}
+
+#scene06 .icon .i4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#scene06 .icon .i4 >img{
+    position: absolute;
+    left: 50%;
+    top: 9px;
+    transform: translateX(-50%);
+}
+
+#scene06 .icon > li .text{
+    font-family: "Yoon윤고딕 770";
+    font-size: 16px;
+    color: #d1dfee;
+    text-align: center;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: 0;
+}
+
+#scene06 .icon .i1 .text{
+    left: 0;
+}
+#scene06 .icon .i2 .text{
+    left: 0;
+}
+#scene06 .icon .i3 .text{
+    left: 15px;
+}
+#scene06 .icon .i4 .text{
+    left: 22px;
+}
+
+/*--------------------------------------------------------------
+    #scene06 end
+--------------------------------------------------------------*/
+
+#footer {
+    height: 426px;
+    background: #03101e;
+    position: relative;
+}
+
+#footer .footer_inner{
+    width: 1126px;
+    height: 285px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#footer .footer_inner .top{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#footer .footer_inner .top > div{
+    width: 250px;
+    height: 164px;
+    float: left;
+    margin-right: 217px;
+    position: relative;
+}
+
+#footer .footer_inner .top > div:nth-child(3){
+    margin-right: 0;
+}
+
+#footer .footer_inner .top .left > ul > li{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #859db7;
+    margin-bottom: 16px;
+}
+
+#footer .footer_inner .top .left .left01{
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+#footer .footer_inner .top .left .left01 .bold{
+    font-family: 'Yoon윤고딕 770';
+}
+
+#footer .footer_inner .top .left .left02{
+    position: absolute;
+    left: 185px;
+    top: 60px;
+}
+
+#footer .footer_inner .top > div .tit{
+    font-family: 'Gotham Bold';
+    font-size: 16px;
+    color: #fff;
+}
+
+#footer .footer_inner .top .center .family_box{
+    width: 245px;
+    height: 38px;
+    border: 1px solid #3d5065;
+    padding: 0 15px 0;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    cursor: pointer;
+}
+
+#footer .footer_inner .top .center .family_box > span{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #859db7;
+    line-height: 38px;
+}
+
+#footer .footer_inner .top .center .family_box > span:nth-child(2) {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+
+#footer .footer_inner .top .right{
+    width: 163px;
+    height: 164px;
+}
+
+#footer .footer_inner .top .right .sns{
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+#footer .footer_inner .top .right > ul > li{
+    font-family: 'Gotham Book';
+    font-size: 14px;
+    color: #859db7;
+    margin-bottom: 16px;
+}
+
+
+
+#footer .footer_inner .line{
+    width: 1126px;
+    height: 1px;
+    background: #002c5e;
+    position: absolute;
+    bottom: 75px;
+}
+
+#footer .footer_inner .bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#footer .footer_inner .bottom > div{
+    float: left;
+}
+
+#footer .footer_inner .bottom .left{
+    width: 465px;
+    height: 40px;
+}
+
+#footer .footer_inner .bottom .call{margin-bottom: 16px;}
+
+#footer .footer_inner .bottom .call > span{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 14px;
+    color: #859db7;
+}
+#footer .footer_inner .bottom .call > span:nth-child(1){
+    font-family: 'Yoon윤고딕 770';
+    margin-right: 5px;
+}
+
+#footer .footer_inner .bottom .copyright{
+    font-family: 'Gotham Book';
+    font-size: 12px;
+    color: #859db7;
+}
+
+#footer .footer_inner .bottom .copyright > img{margin: 0 3px 0;}
+
+#footer .footer_inner .bottom .right{
+    width: 584px;
+    height: 40px;
+}
+
+#footer .footer_inner .bottom .right .right01{margin-bottom: 14px;}
+
+#footer .footer_inner .bottom .right > div > span{
+    font-family: 'Yoon윤고딕 740';
+    font-size: 12px;
+    letter-spacing: -1px;
+    color: #859db7;
+    margin-right: 20px;
+}
+
+
+/*--------------------------------------------------------------
+    #footer end
+--------------------------------------------------------------*/
